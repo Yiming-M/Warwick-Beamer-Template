@@ -1,6 +1,6 @@
 # Warwick-Beamer-Template (MIT License) :star2:
 
-A beamer template for University of Warwick. 
+A beamer template for University of Warwick. Yes, the Warwick's "W"-shape logo is drawn by TikZ!
 
 **Credits**:
 

@@ -1,0 +1,44 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Warwick}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+\usepackage{caption}
+
+\usepackage{tikz}
+\usepackage{tikzsymbols}
+
+\usepackage{datetime}
+\usepackage[style=ieee]{biblatex}
+\renewcommand*{\bibfont}{\scriptsize}
+
+\title{Wasserstein Distance in Crowd Counting}
+\author{Yiming Ma}
+\institute{MathSys \& SIPLab}
+\date{\shortdate{\formatdate{11}{05}{2022}}}
+
+\addbibresource{ref.bib}
+
+\begin{document}
+\captionsetup[figure]{labelfont={bf}, name={Fig.}}
+
+
+\frame{\titlepage}
+
+\begin{frame}{Outline}
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\input{S1/s1.tex}
+
+\input{S2/s2.tex}
+
+\input{S3/s3.tex}
+
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\printbibliography
+\end{frame}
+
+\end{document}

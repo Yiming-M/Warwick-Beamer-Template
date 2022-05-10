@@ -1,0 +1,53 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{Warwick}[1][]{
+\vskip-0.04cm
+\begin{beamercolorbox}[wd=\the\paperwidth, ht=1.5cm]{frametitle}
+\begin{tikzpicture}
+\useasboundingbox[fill=white] (0, 0) rectangle (\the\paperwidth-2.5cm, 1.5cm);
+\fill[wwmaincolor]
+(0, 1.5cm) --
+(\the\paperwidth, 1.5cm) --
+(\the\paperwidth, 1.2cm) --
+(\the\paperwidth-0.8cm, 1.2cm) -- 
+(\the\paperwidth-1.2cm, 0.5cm) -- 
+(\the\paperwidth-1.6cm, 1.2cm) -- 
+(\the\paperwidth-1.4cm, 1.2cm) -- 
+(\the\paperwidth-1.8cm, 0.5cm) -- 
+(\the\paperwidth-2.2cm, 1.2cm) -- 
+(0, 1.2cm) --
+cycle;
+
+\ifx\insertframesubtitle\@empty
+{\node[anchor=west, wwsurroundcolor, font=\Large] at (0.4cm, 0.75cm){\insertframetitle};}
+\else
+{\node[anchor=west, wwsurroundcolor, font=\Large] at (0.4cm, 0.75cm){\insertframetitle};
+\node[anchor=west, wwsurroundcolor, font=\large] at (0.4cm, 0.2cm){\insertframesubtitle};}
+\fi
+\end{tikzpicture}
+\end{beamercolorbox}
+}
+
+
+\defbeamertemplate*{section page}{Warwick}[1][]{
+\vspace*{-0.2cm}
+\begin{beamercolorbox}[wd=\the\paperwidth, ht=\the\paperheight]{part title}
+\begin{tikzpicture}
+\useasboundingbox (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+\fill[myBlue1] (0, -0.2cm) rectangle (\the\paperwidth, \the\paperheight);
+\fill[myBlue2]
+(0, \the\paperheight) --
+(\the\paperwidth, \the\paperheight-0.15cm) --
+(\the\paperwidth, \the\paperheight-0.45cm) --
+(\the\paperwidth-0.8cm, \the\paperheight-0.45cm) -- (\the\paperwidth-1.2cm, \the\paperheight-1.15cm) -- (\the\paperwidth-1.6cm, \the\paperheight-0.45cm) -- (\the\paperwidth-1.4cm, \the\paperheight-0.45cm) -- (\the\paperwidth-1.8cm, \the\paperheight-1.15cm) -- (\the\paperwidth-2.2cm, \the\paperheight-0.45cm) -- 
+(0, \the\paperheight-0.45cm) --
+cycle;
+\node[text=myBlue2, anchor=north] at (\the\paperwidth-1.5cm, \the\paperheight-1.15cm) {\footnotesize WARWICK};
+
+{\node[text=white, anchor=center, font=\Large] at (0.5*\the\paperwidth, 0.5*\the\paperheight){\insertsection};}
+\end{tikzpicture}
+\end{beamercolorbox}
+}
+
+\mode<all>

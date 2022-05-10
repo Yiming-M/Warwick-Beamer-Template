@@ -1,0 +1,42 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+\begin{tikzpicture}
+\useasboundingbox (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+\fill[myBlue1] (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+\fill[myBlue2]
+(0, \the\paperheight) --
+(\the\paperwidth, \the\paperheight) --
+(\the\paperwidth, \the\paperheight-0.3cm) --
+(\the\paperwidth-0.8cm, \the\paperheight-0.3cm) -- (\the\paperwidth-1.2cm, \the\paperheight-1.0cm) -- (\the\paperwidth-1.6cm, \the\paperheight-0.3cm) -- (\the\paperwidth-1.4cm, \the\paperheight-0.3cm) -- (\the\paperwidth-1.8cm, \the\paperheight-1.0cm) -- (\the\paperwidth-2.2cm, \the\paperheight-0.3cm) -- 
+(0, \the\paperheight-0.3cm) --
+cycle;
+\node[text=myBlue2, anchor=north] at (\the\paperwidth-1.5cm, \the\paperheight-1.0cm) {\footnotesize WARWICK};
+\ifnum\thepage>1\relax%
+\fill[white] (0, 0) rectangle(\the\paperwidth,\the\paperheight);
+\fi
+\end{tikzpicture}
+}
+
+\defbeamertemplate*{title page}{Warwick}[1][]{
+\vspace{2.5cm}
+\begin{beamercolorbox}[sep=8pt, center, #1]{title page header}
+\usebeamerfont{title}\inserttitle\par%
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[sep=8pt, center, #1]{author}
+\usebeamerfont{author}\insertauthor
+\end{beamercolorbox}
+
+\begin{beamercolorbox}[center, #1]{institute}
+\usebeamerfont{institute}\insertinstitute
+\end{beamercolorbox}
+
+\vskip2cm
+\begin{beamercolorbox}[leftskip=10cm, #1]{date}
+\usebeamerfont{date}\insertdate
+\end{beamercolorbox}
+\vfill
+}
+
+\mode<all>

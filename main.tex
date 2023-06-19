@@ -5,7 +5,8 @@
 
 \usepackage{graphicx}
 \usepackage{caption}
-
+\usepackage{subcaption}
+\usepackage{multirow}
 \usepackage{tikz}
 \usepackage{tikzsymbols}
 
@@ -13,10 +14,32 @@
 \usepackage[style=ieee]{biblatex}
 \renewcommand*{\bibfont}{\scriptsize}
 
-\title{Wasserstein Distance in Crowd Counting}
-\author{Yiming Ma}
-\institute{MathSys \& SIPLab}
-\date{\shortdate{\formatdate{11}{05}{2022}}}
+\title{Robust Multiview Multimodal Driver Monitoring System Using Masked
+Multi-Head Self-Attention}
+\author{
+    Yiming Ma \inst{1} \and
+    Victor Sanchez \inst{1} \and
+    Soodeh Nikan \inst{2} \and
+    Devesh Upadhyay \inst{2} \and
+    Bhushan Atote \inst{1} \and
+    Tanaya Guha \inst{3}
+}
+\institute{
+    \inst{1} University of Warwick \and
+    \inst{2} Ford Motor Company \and
+    \inst{3} University of Glasgow
+}
+\date{\shortdate{\formatdate{18}{06}{2023}}}
+\titlegraphic{    
+    \makebox{
+        \includegraphics[height=3.5em,keepaspectratio]{images/warwick-logo.png}
+        \hspace{1em}
+        \includegraphics[height=3.5em,keepaspectratio]{images/ford-logo.png}
+        \hspace{1em}
+        \includegraphics[height=3.5em,keepaspectratio]{images/glasgow-logo.png}
+    }
+}
+\logo{\includegraphics[height=4em, keepaspectratio]{images/CVPR.png}}
 
 \addbibresource{ref.bib}
 
@@ -35,6 +58,14 @@
 \input{S2/s2.tex}
 
 \input{S3/s3.tex}
+
+\input{S4/s4.tex}
+
+\section*{Thanks}
+\begin{frame}
+\frametitle{}
+\centering\LARGE Thanks!
+\end{frame}
 
 \begin{frame}[allowframebreaks]
 \frametitle{References}

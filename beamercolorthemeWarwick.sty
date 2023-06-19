@@ -1,56 +1,98 @@
 \mode<presentation>
 
-% Define colors.
-\definecolor{wwviolet}{RGB}{180,21,58}   
-\definecolor{wwblue}{HTML}{00b2dd}  
-\definecolor{mpiblue}{HTML}{5397CC}
-\definecolor{wwsky}{HTML}{204f79}
-\definecolor{wwgrey}{HTML}{3f4246}
-\definecolor{wwaubergine}{HTML}{5b3069}
-\definecolor{wwruby}{HTML}{89102c}
-\definecolor{wwbrubyred}{HTML}{ef4050}
-\definecolor{wworange}{HTML}{f47920}
-\definecolor{wwborange}{HTML}{f26322}
-\definecolor{wwgold}{HTML}{ffc233}
-\definecolor{wwbgold}{HTML}{c8a019}
-
-\definecolor{myBlue1}{RGB}{5, 38, 79}
-\definecolor{myBlue2}{RGB}{21, 144, 255}
-
-% Settings.
-\colorlet{wwmaincolor}{wwaubergine}
-\colorlet{wwsurroundcolor}{wwaubergine}
-\colorlet{wwcontrastcolor}{white}
-
-\setbeamercolor*{title page header}{fg=white}
-\setbeamercolor*{date}{fg=myBlue2}
-\setbeamercolor*{author}{fg=white}
-\setbeamercolor*{institute}{fg=white}
-
-\setbeamercolor*{frametitle}{fg=wwmaincolor}
-
-\setbeamercolor{palette primary}{fg=wwgrey}
-\setbeamercolor{palette secondary}{fg=wwgrey}
-\setbeamercolor{palette tertiary}{fg=wwgrey}
-\setbeamercolor{palette quaternary}{fg=wwgrey}
-\setbeamercolor{normal text}{fg=wwgrey}
-
-\setbeamercolor{block title example}{use=structure,fg=white,bg=wwmaincolor}
-\setbeamercolor{block body example}{use=structure,bg=wwmaincolor!10,fg=wwgrey}
-
-\setbeamercolor{block title definition}{use=structure,fg=white,bg=wwmaincolor}
-\setbeamercolor{block body definition}{use=structure,bg=wwmaincolor!10,fg=wwgrey}
-
-\setbeamercolor{block title}{use=structure,fg=white,bg=wwmaincolor}
-\setbeamercolor{block body}{use=structure,bg=wwmaincolor!10,fg=wwgrey}
-
-\setbeamercolor{section in head/foot}{bg=wwblue!80,fg=wwmaincolor}
-\setbeamercolor{author in head/foot}{bg=wwsurroundcolor,fg=wwcontrastcolor}
-\setbeamercolor{date in head/foot}{bg=wwsurroundcolor!70,fg=wwcontrastcolor}
-\setbeamercolor{title in head/foot}{bg=wwsurroundcolor!90,fg=wwcontrastcolor}
-
-\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\color{wwviolet}{$\blacktriangleright$}}}
-\setbeamertemplate{itemize subitem}{\scriptsize\raise1.25pt\hbox{\color{wwsky}{$\blacktriangleright$}}}
-\setbeamertemplate{itemize subsubitem}{\tiny\raise1.5pt\hbox{\color{wwblue}{$\blacktriangleright$}}}
+% Official Warwick colours from https://id7.warwick.ac.uk/components/colour-palette.
+\definecolor{aubergine1}{HTML}{552D62}
+\definecolor{aubergine2}{HTML}{886C91}
+\definecolor{gray1}{HTML}{393A3B}
+\definecolor{gray2}{HTML}{747576}
+\definecolor{red1}{HTML}{9A1310}
+\definecolor{red2}{HTML}{B85A58}
+\definecolor{blue1}{HTML}{00407A}
+\definecolor{blue2}{HTML}{4D79A2}
+\definecolor{green1}{HTML}{0F4001}
+\definecolor{green2}{HTML}{57794D}
+% Your own colours
+% \definecolor{mycolor1}{HTML}{FF0000}
+%
+%
+%
+% Customise your own colours here.
+% Title page
+\colorlet{title_fg_color}{aubergine1}
+\colorlet{title_bg_color}{white}
+\colorlet{date_color}{black}
+\colorlet{author_color}{black}
+\colorlet{institute_color}{black}
+% Table of contents
+\colorlet{toc_color}{blue1}
+% Frame
+\colorlet{frametitle_color}{aubergine1}
+\colorlet{framesubtitle_color}{aubergine2}
+\colorlet{logo_color}{aubergine1}  % the colour of the "W" logo
+\colorlet{section_color}{aubergine1}
+\colorlet{navigation_color}{gray2}
+% Text
+\colorlet{primary_color}{aubergine1}
+\colorlet{secondary_color}{aubergine2}
+\colorlet{tertiary_color}{gray1}
+\colorlet{quaternary_color}{gray2}
+\colorlet{normal_text_color}{black}
+\colorlet{alert_color}{red1}
+% Block
+\colorlet{block_example_fg_color}{green1}
+\colorlet{block_example_bg_color}{green2}
+\colorlet{block_definition_fg_color}{blue1}
+\colorlet{block_definition_bg_color}{blue2}
+\colorlet{block_theorem_fg_color}{red1}
+\colorlet{block_theorem_bg_color}{red2}
+\colorlet{block_other_fg_color}{aubergine1}
+\colorlet{block_other_bg_color}{aubergine2}
+% Items
+\colorlet{item_color}{aubergine1}
+\colorlet{subitem_color}{blue1}
+\colorlet{subsubitem_color}{green1}
+%
+\colorlet{bg_color}{white}
+%
+%
+%
+\setbeamercolor*{title page header}{fg=title_fg_color, bg=title_bg_color}
+\setbeamercolor*{date}{fg=date_color}
+\setbeamercolor*{author}{fg=author_color}
+\setbeamercolor*{institute}{fg=institute_color}
+%
+\setbeamercolor*{section in toc}{fg=toc_color}
+\setbeamercolor*{subsection in toc}{fg=toc_color}
+%
+\setbeamercolor*{frametitle}{fg=frametitle_color}
+\setbeamercolor*{framesubtitle}{fg=framesubtitle_color}
+\setbeamercolor*{section in head/foot}{fg=section_color, bg=bg_color}
+\setbeamercolor*{subsection in head/foot}{fg=section_color, bg=bg_color}
+\setbeamercolor*{author in head/foot}{fg=author_color, bg=bg_color}
+\setbeamercolor*{date in head/foot}{fg=date_color, bg=bg_color}
+\setbeamercolor*{title in head/foot}{fg=title_color, bg=bg_color}
+\setbeamercolor*{footline}{fg=navigation_color, bg=bg_color}
+%
+\setbeamercolor*{palette primary}{fg=primary_color}
+\setbeamercolor*{palette secondary}{fg=secondary_color}
+\setbeamercolor*{palette tertiary}{fg=tertiary_color}
+\setbeamercolor*{palette quaternary}{fg=quaternary_color}
+\setbeamercolor*{normal text}{fg=normal_text_color}
+\setbeamercolor*{alerted text}{fg=alert_color}
+%
+\setbeamercolor{block title example}{use=structure, fg=white, bg=block_example_bg_color}
+\setbeamercolor{block body example}{use=structure, fg=block_example_fg_color, bg=white}
+%
+\setbeamercolor{block title definition}{use=structure, fg=white,bg=block_definition_bg_color}
+\setbeamercolor{block body definition}{use=structure, fg=block_definition_fg_color, bg=white}
+%
+\setbeamercolor{block title theorem}{use=structure, fg=white,bg=block_theorem_bg_color}  
+\setbeamercolor{block body theorem}{use=structure, fg=block_theorem_fg_color, bg=white}
+\setbeamercolor{block title}{use=structure, fg=white, bg=block_other_bg_color}
+\setbeamercolor{block body}{use=structure, fg=block_other_fg_color, bg=white}
+%
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\color{item_color}{$\blacktriangleright$}}}
+\setbeamertemplate{itemize subitem}{\scriptsize\raise1.25pt\hbox{\color{subitem_color}{$\blacktriangleright$}}}
+\setbeamertemplate{itemize subsubitem}{\tiny\raise1.5pt\hbox{\color{subsubitem_color}{$\blacktriangleright$}}}
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize} 
 \mode<all>

@@ -9,8 +9,15 @@
 \useoutertheme{Warwick}
 \usecolortheme{Warwick}
 
-\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{navigation symbols}{
+    \usebeamerfont{footline}
+    \usebeamercolor[fg]{footline}
+    \hspace{1em}
+    \insertframenumber/\inserttotalframenumber
+}
 \setbeamertemplate{blocks}[rounded][shadow=true] 
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
 
 % Beamer margin
 \setbeamersize

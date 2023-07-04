@@ -2,13 +2,7 @@
 
 A beamer template for University of Warwick. Yes, the Warwick's "W"-shape logo is drawn by TikZ!
 
-**Credits**:
-
-- Some design ideas are from Apple's Keynote template "Minimal (Basic Colour)" : ![Minimal](https://github.com/YimingMa/Warwick-Beamer-Template/blob/main/images/keynote.jpeg)
-
-- Some colour codes are borrowed from @davidjpurser's [Warwick-LaTeX-Beamer-Theme](https://github.com/davidjpurser/Warwick-LaTeX-Beamer-Theme) :thumbsup:.
-
-**Visualisation**:
+**Example Visualisation**:
 
 The image below provides as an example of this template :heart_eyes:
 
